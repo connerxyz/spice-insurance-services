@@ -4,9 +4,9 @@
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #155bd5;
-  --primary-dark: #1c3ab6;
-  --primary-light: #e2f1ff;
+  --primary: #e4b822;
+  --primary-dark: #e4b822;
+  --primary-light: #e4b822;
   --accent: #00d4d7;
   --accent-dark: #00bac1;
   --accent-light: #dff9f8;
@@ -73,6 +73,16 @@ body {
 
 img {
   max-width: 100%;
+}
+
+img.logo {
+  max-width: 2rem;
+}
+
+.company-name {
+  color: var(--dark-1);
+  padding-left: 8px;
+  vertical-align: middle;
 }
 
 a {
@@ -328,7 +338,7 @@ p {
 ===========================*/
 .section-title-five {
   text-align: center;
-  max-width: 550px;
+  max-width: 800px;
   margin: auto;
   margin-bottom: 50px;
   position: relative;
@@ -489,7 +499,7 @@ p {
   display: flex;
   align-items: center;
   padding: 11px 16px;
-  color: var(--white);
+  color: var(--dark-1); /* white-to-black */
   text-transform: capitalize;
   position: relative;
   border-radius: 5px;
@@ -919,6 +929,8 @@ p {
   position: relative;
   padding:160px 0 100px 0;
   background: var(--primary);
+  background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(228,184,34,1) 86%);
+/*  background: linear-gradient(180deg, rgba(228,184,34,0.11670605742296913) 0%, rgba(228,184,34,1) 86%);*/
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight {
@@ -940,6 +952,7 @@ p {
   }
 }
 .header-eight .header-content {
+  padding-right: 1rem;
   border-radius: 0;
   position: relative;
   z-index: 1;
@@ -953,7 +966,7 @@ p {
 }
 .header-eight .header-content .hero {
   font-weight: 700;
-  color: var(--white);
+  color: var(--dark-1); /* white-to-black */
   text-shadow: 0px 3px 8px #00000017;
   text-transform: capitalize;
 }
@@ -974,7 +987,7 @@ p {
 }
 .header-eight .header-content p {
   margin-top: 30px;
-  color: var(--white);
+  color: var(--dark-1); /* white-to-black */
   opacity: 0.7;
 }
 .header-eight .button {
@@ -982,14 +995,14 @@ p {
 }
 .header-eight .primary-btn {
   margin-right: 12px;
-  background-color: var(--white);
-  color: var(--primary);
+  background-color: var(--dark-1); /* white-to-black */
+  color: var(--white);
   border: 1px solid transparent;
 }
 .header-eight .primary-btn:hover {
-  background-color: transparent;
-  color: var(--white);
-  border-color: var(--white);
+  background-color: var(--white);
+  color: var(--dark-1);
+  border-color: var(--dark-1);
 }
 .header-eight .video-button {
   display: inline-flex;
@@ -1475,10 +1488,10 @@ p {
 .call-action .inner-content h2 {
   font-weight: 700;
   margin-bottom: 30px;
-  color: var(--white);
+  color: var(--dark-1); /* white-to-black */
 }
 .call-action .inner-content p {
-  color: var(--white);
+  color: var(--dark-1); /* white-to-black */
 }
 .call-action .inner-content .light-rounded-buttons {
   margin-top: 45px;
